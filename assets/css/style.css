@@ -58,14 +58,17 @@ html{
 
 /*--- Mobile Navbar ---*/
 .mobile-navbar{
-    width: 200px;
-    height: 100vh;
-    background-color: cadetblue;
+    width: 0px;
+    height: calc(100vh - 107px);
+    background-color: rgb(39, 39, 39);
     float: right;
-    position: absolute;
+    position: relative;
     z-index: 10;
-    right: -200px;
+    right: 0;
     transition: 0.3s ease-in-out;
+
+}
+.mobile-nav-links{
     display: none;
 }
 .mobile-navbar ul{
@@ -104,6 +107,9 @@ html{
     color: rgb(153, 130, 0);
 }
 @media screen and (max-width: 1000px){
+    .nav-links ul{
+        display: none;
+    }
     .nav-open{
         display: block;
     }
