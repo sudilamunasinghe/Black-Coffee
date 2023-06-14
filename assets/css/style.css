@@ -66,14 +66,17 @@ html{
     z-index: 10;
     right: -200px;
     transition: 0.3s ease-in-out;
+    display: none;
 }
 .mobile-navbar ul{
     list-style: none;
     position: relative;
     left: 50px;    
+    max-width: fit-content;
 }
 .mobile-navbar ul li{
     margin-bottom: 20px;
+    max-width: fit-content;
 }
 .mobile-navbar ul a{
     text-decoration: none;
