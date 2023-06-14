@@ -16,3 +16,16 @@ $(".nav-close").click(function(){
         display: 'none',
     })
 })
+
+// JS Code for Home Slider
+var swiper = new Swiper(".home-swipe", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    effect: "fade",
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+});
