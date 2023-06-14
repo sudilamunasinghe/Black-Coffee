@@ -117,3 +117,132 @@ html{
         overflow-x: hidden;
     }
 }
+
+/*--- Home Slider ---*/
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .home-slides{
+    height: 100%;
+  }
+  .home-swipe{
+    height: calc(100vh - 107px);
+  }
+  .home-slide1{
+    background-image: url(../../assets/img/home-slide1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .home-slide2{
+    background-image: url(../../assets/img/home-slide2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .home-slide3{
+    background-image: url(../../assets/img/home-slide3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .home-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000070;
+  }
+  .home-details{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .home-details h1{
+    text-transform: uppercase;
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .home-details p{
+    color: #e6e6e6de;
+    font-size: 20px;
+  }
+  .home-slider-btns{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .home-slider-btn1{
+    padding: 20px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: rgb(189, 142, 41);
+    border: 2px solid rgb(189, 142, 41);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  .home-slider-btn1:hover{
+    color: rgb(189, 142, 41);
+    background-color: transparent;
+  }
+  .home-slider-btn2{
+    padding: 20px;
+    color: rgb(189, 142, 41);
+    font-size: 15px;
+    font-weight: 400;
+    background-color: transparent;
+    border: 2px solid rgb(189, 142, 41);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  .home-slider-btn2:hover{
+    color: #000000;
+    background-color: rgb(189, 142, 41);
+  }
+  @media screen and (max-width: 1000px){
+    .home-details{
+        width: 70%;
+    }
+  }
+  @media screen and (max-width: 600px){
+    .home-details h1{
+        font-size: 35px;
+    }
+    .home-details p{
+        font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 450px){
+    .home-details{
+        width: 80%;
+    }
+    .home-details h1{
+        font-size: 30px;
+    }
+    .home-slider-btn1,.home-slider-btn2{
+        transform: scale(0.9);
+    }
+  }
