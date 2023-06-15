@@ -256,7 +256,7 @@ body{
 
   /*--- Details Section ---*/
   .details{
-    background-color: transparent;
+    background-color: #000000;
     padding: 100px 40px;
   }
   .details-flex{
