@@ -78,3 +78,56 @@ function inVisible(element) {
     });
     })
     });
+
+
+// Products Section
+$(document).ready(function(){
+    $(".product-dish-btn").click(function(){
+        $(".product-dish").fadeIn(200)
+        $(".product-dish").css({
+            display: 'block',
+        })
+        $(".product-drinks").css({
+            display: 'none',
+        })
+        $(".product-desserts").css({
+            display: 'none',
+        })
+        $(this).removeClass("product-unselect")
+        $(this).addClass("product-select")
+        $(".product-drinks-btn").addClass("product-unselect")
+        $(".product-desserts-btn").addClass("product-unselect")
+    })
+    $(".product-drinks-btn").click(function(){
+        $(".product-drinks").fadeIn(200)
+        $(".product-drinks").css({
+            display: 'block',
+        })
+        $(".product-dish").css({
+            display: 'none',
+        })
+        $(".product-desserts").css({
+            display: 'none',
+        })
+        $(this).removeClass("product-unselect")
+        $(this).addClass("product-select")
+        $(".product-dish-btn").addClass("product-unselect")
+        $(".product-desserts-btn").addClass("product-unselect")
+    })
+    $(".product-desserts-btn").click(function(){
+        $(".product-desserts").fadeIn(200)
+        $(".product-desserts").css({
+            display: 'block',
+        })
+        $(".product-dish").css({
+            display: 'none',
+        })
+        $(".product-drinks").css({
+            display: 'none',
+        })
+        $(this).removeClass("product-unselect")
+        $(this).addClass("product-select")
+        $(".product-drinks-btn").addClass("product-unselect")
+        $(".product-dish-btn").addClass("product-unselect")
+    })
+})
