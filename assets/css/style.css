@@ -834,3 +834,36 @@ body{
     transform: translateX(-50%);
   }
 }
+@media screen and (max-width: 1300px){
+  .sellers-card{
+    max-width: 1000px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 1000px){
+  .sellers-card{
+    justify-content: space-evenly;
+  }
+  .sellers-card-div{
+    width: 40%;
+  }
+  .sellers-div1, .sellers-div2{
+    margin-bottom: 50px;
+  }
+  .sellers-card-div-img img{
+    height: 250px;
+  }
+  .sellers-overlay{
+    height: 250px;
+  }
+}
+@media screen and (max-width: 550px){
+  .sellers-card-div{
+    width: 80%;
+  }
+  .sellers-div1, .sellers-div2, .sellers-div3{
+    margin-bottom: 70px;
+  }
+}
