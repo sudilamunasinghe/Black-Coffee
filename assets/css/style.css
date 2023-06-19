@@ -1033,6 +1033,7 @@ body{
 }
 .products-card{
   width: 30%;
+  margin-bottom: 40px;
 }
 .products-card-img{
   width: 100%;
