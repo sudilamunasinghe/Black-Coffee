@@ -500,20 +500,22 @@ body{
   }
   .stats-flex-div-icon{
     width: 70px;
+    height: 70px;
     border: 2px solid rgb(189, 142, 41);
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     padding: 20px;
-    margin-bottom: 30px;
     transition: 0.3s ease-in-out;
+    margin-bottom: 30px;
   }
   .stats-flex-div-icon i{
     font-size: 45px;
     color: rgb(189, 142, 41);
-    position: relative;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
   }
   .stats-flex-div-details{
     color: #ffffff;
@@ -533,5 +535,8 @@ body{
     color: #a3a3a3;
   }
   .stats-flex-div:hover .stats-flex-div-icon{
-    scale: 1.1;
+    background-color: rgb(189, 142, 41);
+  }
+  .stats-flex-div:hover .stats-i{
+    color: #000000c2;
   }
