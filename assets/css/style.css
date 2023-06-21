@@ -14,10 +14,16 @@ body{
 
 /*--- Navigation Bar ---*/
 .navbar{
-    background-color: rgb(39, 39, 39);
-    padding: 40px;
+    background-color: transparent;
+    padding: 30px;
     display: flex;
     justify-content: space-between; 
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #c7c7c769;
 }
 .nav-links{
     display: flex;
@@ -56,6 +62,9 @@ body{
     text-transform: uppercase;
     margin-right: 30px;
 }
+.navbar a{
+  text-decoration: none;
+}
 .nav-open{
     margin-left: 20px;
     cursor: pointer;
@@ -66,14 +75,14 @@ body{
 /*--- Mobile Navbar ---*/
 .mobile-navbar{
     width: 0px;
-    height: calc(100vh - 107px);
-    background-color: rgb(39, 39, 39);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.61);
     float: right;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     right: 0;
     transition: 0.3s ease-in-out;
-
+    backdrop-filter: blur(15px);
 }
 .mobile-nav-links{
     display: none;
@@ -150,7 +159,7 @@ body{
     height: 100%;
   }
   .home-swipe{
-    height: calc(100vh - 107px);
+    height: calc(100vh + 87px);
   }
   .home-slide1{
     background-image: url(../../assets/img/home-slide1.jpg);
